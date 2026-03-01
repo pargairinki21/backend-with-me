@@ -2,17 +2,24 @@
   "name": "backendwithrinki",
   "version": "1.0.0",
   "description": "backend with rinki at vs code",
+  "type":"module",
   "main": " ",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node /src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
   },
   "keywords": [
     "javascript",
     "backend"
   ],
   "author": "Rinki Pargai",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.1.14"
-  }
+  "license": "ISC"
 }
