@@ -2,15 +2,21 @@
   "name": "backendwithrinki",
   "version": "1.0.0",
   "description": "backend with rinki at vs code",
-  "type":"module",
+  "type": "module",
   "main": " ",
   "scripts": {
-    "dev": "node /src/index.js"
+    "start": "node --env-file=.env src/index.js",
+    "dev": "nodemon --exec \"node --env-file=.env src/index.js\" --watch src"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "mongoose": "^9.2.3"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.3",
+    "mongoose-aggregate-paginate-v2": "^1.1.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
